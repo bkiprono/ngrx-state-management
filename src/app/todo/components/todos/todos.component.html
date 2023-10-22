@@ -1,0 +1,15 @@
+<main>
+  <div class="form">
+    <form [formGroup]="todoForm" (ngSubmit)="createTodo()">
+      <div class="form-group">
+        <label for="title"> Enter your Todo</label>
+        <textarea name="todo" id="todo" cols="30" rows="5" formControlName="todo"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">
+          Add Todo
+        </button>
+      </div>
+    </form>
+  </div>
+</main>

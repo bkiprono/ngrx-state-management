@@ -1,0 +1,36 @@
+main {
+  .form {
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      gap: 20px;
+
+      .form-group {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 5px;
+
+        textarea {
+          padding: 10px;
+        }
+
+        button {
+          cursor: pointer;
+          background-color: green;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+        }
+      }
+    }
+  }
+}
