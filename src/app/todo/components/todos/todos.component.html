@@ -12,4 +12,25 @@
       </div>
     </form>
   </div>
+
+  <div class="list">
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of todos">
+          <td>{{ item }}</td>
+          <td>
+            <button>
+              Mark as Done
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </main>

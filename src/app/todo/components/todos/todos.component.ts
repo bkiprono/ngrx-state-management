@@ -20,12 +20,11 @@ export class TodosComponent implements OnInit {
 
   }
 
-  createTodo() {
-    console.log(this.todoForm.value.todo);
+  async createTodo() {
     if (!this.todoForm.valid) {
       return;
     }
-    this.todoService.setTodo(this.todoForm.value.todo);
+    this.todos = await this.todoService.setTodo(this.todoForm.value.todo);
   }
 
 }

@@ -19,14 +19,8 @@ export class TodoService {
 
   async setTodo(todo: string) {
     let currentTodo: any = await this.getTodo() || [];
-
-    console.log(currentTodo);
-
     currentTodo.push(todo);
-
     const data = JSON.stringify(currentTodo);
-    console.log(data);
-
     await localStorage.setItem('todo', data);
     return await this.getTodo();
   }
